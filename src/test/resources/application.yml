@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    base
+
+default-url: https://demo.prestashop.com/
+
+driver-headless: false
+browser-size: 1920x1080
+driver-manager-enabled: true
+webDriver-logs-enabled: true
+
+---
+spring:
+  profiles: docker
+
+remote-url: http://localhost:4444/wd/hub
+enable-video: true
+enable-VNC: true
+
+---
+spring:
+  profiles: chrome
+
+device: desktop
+
+---
+spring:
+  profiles: safari
+
+device: desktop

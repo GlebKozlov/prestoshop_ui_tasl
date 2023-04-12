@@ -1,0 +1,5 @@
+browser: chrome
+
+spring:
+  profiles:
+    active: base, ${browser}
